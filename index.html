@@ -1,0 +1,84 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="stylesheet" href="./node_modules/bulma/css/bulma.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <title>Vanilla JS and ES6 Workshop</title>
+  </head>
+
+  <body>
+    <header class="container">
+      <img class="logo" src="./assets/images/logo.png" alt="Pokemon">
+      <h1 class="primary-title">Search info about your favorite Pokemon</h1>
+    </header>
+
+    <main class="container section-space">
+      <section id="form" class="columns">
+        <form class="column is-8 is-offset-2" novalidate>
+          <p class="control has-addons">
+            <input id="name" type="text" class="input is-expanded" placeholder="Name of the Pokemon" max-length="30">
+            <button id="search-btn" type="button" class="button is-success">Search</button>
+          </p>
+        </form>
+      </section>
+
+      <section id="loading">
+        <h2 class="title is-2">Loading...</h2>
+      </section>
+
+      <section id="result" class="columns section-space">
+        <div class="column is-8 is-offset-2">
+          <div class="box">
+            <article class="media">
+              <div class="media-left">
+                <figure class="image is-64x64">
+                  <img id="pokemon-img" src="http://bulma.io/images/placeholders/128x128.png" alt="Pokemon Image">
+                </figure>
+              </div>
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    <strong id="pokemon-name"></strong> <small id="pokemon-number"></small>
+                    <br>
+                    <span id="pokemon-types"></span>
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="search-again">
+        <p class="control">
+          <button id="search-again-btn" class="button is-large is-primary is-outlined logo">Search another</button>
+        </p>
+      </section>
+
+      <div id="name-notification" class="notification is-danger section-space">
+        The Pokemon name can't be empty
+      </div>
+
+      <div id="req-notification" class="notification is-danger section-space">
+        <span id="req-error-msg"></span>
+      </div>
+    </main>
+
+    <footer class="footer sticky-footer">
+      <div class="container">
+        <div class="content has-text-centered">
+          <p>
+            <strong>Pokemon Simple Search</strong> by <a href="http://wendelladriel.com">Wendell Adriel</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

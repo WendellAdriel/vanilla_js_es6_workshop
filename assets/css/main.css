@@ -1,0 +1,22 @@
+.logo {
+  max-width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+.primary-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.section-space {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.sticky-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+}

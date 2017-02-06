@@ -6,9 +6,6 @@
   "repository": "git@github.com:WendellAdriel/vanilla_js_es6_workshop.git",
   "author": "Wendell Adriel <wendelladriel.ti@gmail.com>",
   "license": "MIT",
-  "devDependencies": {
-    "http-server": "^0.9.0"
-  },
   "dependencies": {
     "bulma": "^0.3.1"
   }

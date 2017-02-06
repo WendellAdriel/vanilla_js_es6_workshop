@@ -12,10 +12,4 @@
 yarn
 ```
 
-- Run the project with
-
-```
-http-server
-```
-
-- Go to http://localhost:8080
+- Open the file `index.html` in your browser

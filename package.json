@@ -1,0 +1,15 @@
+{
+  "name": "vanilla_js_es6_workshop",
+  "version": "1.0.0",
+  "description": "A simple front-end application to use as example in a Vanilla JS and ES6 workshop",
+  "main": "index.html",
+  "repository": "git@github.com:WendellAdriel/vanilla_js_es6_workshop.git",
+  "author": "Wendell Adriel <wendelladriel.ti@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^0.9.0"
+  },
+  "dependencies": {
+    "bulma": "^0.3.1"
+  }
+}

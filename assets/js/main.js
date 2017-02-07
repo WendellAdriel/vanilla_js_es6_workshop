@@ -29,7 +29,7 @@
   };
 
   const searchPokemon = () => {
-    const pokemonSearchName = nameInput.value.trim();
+    const pokemonSearchName = nameInput.value.trim().toLowerCase();
 
     if (!isValidName(pokemonSearchName)) {
       nameNotification.style.display = 'block';

@@ -82,13 +82,9 @@
   const buildTypesTags = types => {
     let typesTags = '';
 
-    types.forEach(type => {
-      const typeName    = type.type.name.toUpperCase();
-      const tagTemplate = `<span class="tag">${typeName}</span>`;
-      typesTags        += tagTemplate;
-    });
-
-    return typesTags;
+    return types
+      .map(type => type.type.name.toUpperCase())
+      .reduce((template, type) => template += `<span class="tag">${type}</span>`, typesTags);
   };
 
   const showError = error => {
